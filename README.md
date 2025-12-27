@@ -245,3 +245,21 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 ---
 
 **Built with ❤️ for Healthcare Innovation**
+
+
+# 1. Train the model
+cd ml
+pip install -r requirements.txt
+python scripts/train.py --config configs/efficientnet_config.yaml
+
+# 2. Export to ONNX
+python scripts/export.py --checkpoint checkpoints/best_model.pth --output ../models/model.onnx
+
+# 3. Start backend with Docker
+cd ..
+docker-compose up -d
+
+# 4. Run Flutter app
+cd flutter_app
+flutter pub get
+flutter run
