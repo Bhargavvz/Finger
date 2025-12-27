@@ -85,25 +85,6 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-# Model files (too large for git)
-*.onnx
-*.pt
-*.pth
-*.h5
-*.pkl
-models/
-
-# Data files
-data/
-*.csv
-*.json
-!pubspec.json
-!package.json
-
-# Logs
-logs/
-*.log
-
 # Uploads
 uploads/
 
@@ -130,10 +111,6 @@ yarn-error.log
 *.pem
 *.key
 secrets/
-
-# Database
-*.db
-*.sqlite3
 
 # Checkpoints
 checkpoints/

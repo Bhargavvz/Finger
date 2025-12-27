@@ -1,0 +1,27 @@
+2025-12-27 18:06:31.956 | INFO     | __main__:main:100 - Preparing data...
+2025-12-27 18:06:31.957 | INFO     | src.data.dataset:prepare_data:126 - Scanning data directory: ..\data
+2025-12-27 18:06:32.018 | INFO     | src.data.dataset:prepare_data:145 - Found 1130 images for class A+
+2025-12-27 18:06:32.167 | INFO     | src.data.dataset:prepare_data:145 - Found 2018 images for class A-
+2025-12-27 18:06:32.330 | INFO     | src.data.dataset:prepare_data:145 - Found 1416 images for class AB+
+2025-12-27 18:06:32.429 | INFO     | src.data.dataset:prepare_data:145 - Found 1522 images for class AB-
+2025-12-27 18:06:32.510 | INFO     | src.data.dataset:prepare_data:145 - Found 1304 images for class B+
+2025-12-27 18:06:32.715 | INFO     | src.data.dataset:prepare_data:145 - Found 1482 images for class B-
+2025-12-27 18:06:32.858 | INFO     | src.data.dataset:prepare_data:145 - Found 1704 images for class O+
+2025-12-27 18:06:32.981 | INFO     | src.data.dataset:prepare_data:145 - Found 1424 images for class O-
+2025-12-27 18:06:33.019 | INFO     | src.data.dataset:prepare_data:154 - Total images found: 12000
+2025-12-27 18:06:33.106 | INFO     | src.data.dataset:_compute_class_weights:170 - Class distribution: {'A+': np.int64(1130), 'A-': np.int64(2018), 'AB+': np.int64(1416), 'AB-': np.int64(1522), 'B+': np.int64(1304), 'B-': np.int64(1482), 'O+': np.int64(1704), 'O-': np.int64(1424)}
+2025-12-27 18:06:33.114 | INFO     | src.data.dataset:_compute_class_weights:171 - Class weights: {'A+': np.float32(1.33), 'A-': np.float32(0.74), 'AB+': np.float32(1.06), 'AB-': np.float32(0.99), 'B+': np.float32(1.15), 'B-': np.float32(1.01), 'O+': np.float32(0.88), 'O-': np.float32(1.05)}
+2025-12-27 18:06:33.121 | INFO     | src.data.dataset:setup:180 - Setting up data splits...
+2025-12-27 18:06:33.245 | INFO     | src.data.dataset:setup:201 - Train samples: 8399
+2025-12-27 18:06:33.246 | INFO     | src.data.dataset:setup:202 - Validation samples: 1801
+2025-12-27 18:06:33.246 | INFO     | src.data.dataset:setup:203 - Test samples: 1800
+2025-12-27 18:06:33.315 | INFO     | __main__:main:109 - Creating model...
+2025-12-27 18:06:33.316 | INFO     | src.models.classifier:__init__:58 - Building efficientnet_b0 classifier with 8 classes
+2025-12-27 18:06:43.420 | INFO     | src.models.classifier:__init__:70 - Backbone feature dimension: 1280
+2025-12-27 18:06:43.429 | INFO     | __main__:main:115 - Total parameters: 4,798,340
+2025-12-27 18:06:43.430 | INFO     | __main__:main:116 - Trainable parameters: 4,798,340
+2025-12-27 18:06:43.430 | INFO     | src.training.trainer:__init__:215 - Using device: cpu
+2025-12-27 18:06:43.448 | INFO     | __main__:main:133 - Starting training...
+2025-12-27 18:06:43.448 | INFO     | src.training.trainer:fit:517 - Starting training for 100 epochs
+2025-12-27 18:25:41.659 | INFO     | src.training.trainer:_log_epoch_metrics:581 - Epoch 1/100 - Train Loss: 4.1018, Train Acc: 0.2748 - Val Loss: 1.4257, Val Acc: 0.5308, Val F1: 0.4685
+2025-12-27 18:25:42.359 | INFO     | src.training.trainer:save:160 - Saved checkpoint: checkpoints\checkpoint_epoch0_val_f1_0.4685.pth
